@@ -365,8 +365,14 @@ li {
     transform: scale(1.1);
 }
 
+.fa-github:hover{
+    color: rgb(111, 66, 193);
+}
+
 .fa-instagram:hover {
-    color: rgba(217, 28, 224, 0.82);
+    background: -webkit-linear-gradient(#8a3ab9, #e95950);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-linkedin:hover {
