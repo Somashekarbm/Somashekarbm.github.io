@@ -604,6 +604,7 @@ li {
 /*Start animations*/
 
 @keyframes pulse {
+    
     0% {
         box-shadow: 0 0 0 0 rgb(200, 0, 255);
     }
@@ -670,6 +671,8 @@ li {
     .timeline .date::after {
         left: -5.9rem;
     }
+
+
     @media screen and (max-width: 600px) {
         .menu-toggler {
             top: 2rem;
