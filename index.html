@@ -1,115 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokesh B M - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lokesh B M's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css" />
 </head>
+
 <body>
     <header>
-        <h1>Lokesh B M</h1>
-        <p>Software Developer | Golang | Java | Microservices</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+            <a href="./rock_paper_scissors/index.html"></a>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link">Skills</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
         </nav>
+        <div class="landing-text">
+            <h1>Lokesh B M</h1>
+            <h6>Student <span class="txt-type" data-wait=1000ms data-words='["Android App Developer","Flutter Developer", "UI Designer"]'></span></h6>
+            <a class="landingbtn" href="#portfolio">
+                <p> See my work! </p>
+            </a>
+        </div>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Experienced software engineer with 3.5+ years in backend development, specializing in Golang, Java, microservices, and scalable architectures. Passionate about building high-performance systems and solving complex problems.</p>
-    </section>
-    
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div>
-            <h3>Rakuten | Software Development Engineer</h3>
-            <p><em>Bangalore, India | Mar 2022 – Present</em></p>
-            <ul>
-                <li>Led a team of 3 engineers to develop a revenue assurance model, preventing $4M/month in potential losses.</li>
-                <li>Designed and implemented REST APIs using Golang (net/http) and Java Spring Boot.</li>
-                <li>Integrated Revenue Assurance Model with 12 microservices via gRPC and Spring Cloud.</li>
-                <li>Implemented observability framework with Prometheus, OpenTelemetry, and logging, reducing MTTD by 40%.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Brillio Technologies | Product Engineer</h3>
-            <p><em>Bangalore, India | Aug 2021 - Mar 2022</em></p>
-            <ul>
-                <li>Developed backend features for a web application using Java, enhancing performance by 20%.</li>
-                <li>Optimized application response times by 15% through efficient database queries and caching strategies.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>NewsIO | Co-Founder</h3>
-            <p><em>Remote | Jul 2020 – Jan 2021</em></p>
-            <ul>
-                <li>Built a cross-platform AI-generated short news application, gaining 750+ downloads with a 4.8-star rating.</li>
-                <li>Implemented AI-powered news summarization, achieving 90% user retention.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Internship Experience</h3>
-            <h4>XYZ Solutions | Software Development Intern</h4>
-            <p><em>Remote | Jan 2021 – Jun 2021</em></p>
-            <ul>
-                <li>Developed REST APIs using Java Spring Boot and PostgreSQL.</li>
-                <li>Implemented caching strategies to improve response times by 25%.</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div>
-            <h3>GuardianBot</h3>
-            <p>A mini robot equipped with a camera to detect falls and unresponsiveness, alerting caregivers.</p>
-        </div>
-        <div>
-            <h3>Multi-Store Delivery Startup</h3>
-            <p>Building a hyperlocal delivery platform for groceries, food, and pharmacy items, optimizing last-mile logistics.</p>
-        </div>
-        <div>
-            <h3>AI News Summarizer</h3>
-            <p>Developed a machine learning model to summarize news articles in real time, increasing content engagement.</p>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="profile-img">
+                <img src="images/profile.jpg" alt="" />
+            </div>
+            <div class="about-details">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+
+                </div>
+                <p>
+                    Highly organized and detail-oriented Final Year Engineering student who is a 3⭐ coder @ CodeChef, A Self-taught Android App Developer (Native), Flutter Developer (Hybrid), UI | UX Designer and a person who is excited about learning new technologies.
+                </p>
+
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/lokeshbm/" class="icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/lokesh2021/" class="icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/the_f1_addict/" class="icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.quora.com/profile/Lokesh-BM-2" class="icon-link">
+                                <i class="fab fa-quora"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: Golang, Java, C++, Python</li>
-            <li>Frameworks: Spring Boot, Microservices</li>
-            <li>Technologies: Elasticsearch, Kafka, Kubernetes, Docker</li>
-            <li>DevOps: Jenkins, Git, CI/CD, GCP</li>
-        </ul>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Skills</h1>
+                <h6>What im good at</h6>
+            </div>
+            <div class="my-skills">
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>Android App Development</h1>
+                    <p>Lately I prefer to build Native Android apps using Android Studio because it makes native content building a breeze</p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h1>Flutter Framework</h1>
+                    <p>Flutter Framework is used to develop applications for Android, iOS, Linux, Mac, Windows, and the web from a single codebase, i Mainly learnt this as it is easy to build cross-platform mobile application using Flutter. </p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h1>UI | UX Designing</h1>
+                    <p>Practicing the art of bending the will of pixels for a year now. Every day in this field is an adventure and it continues to marvel me how a good font and color choice turns bland into brilliant.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="resume">
-        <h2>Resume</h2>
-        <p><strong>Email:</strong> lokeshbm2021@gmail.com</p>
-        <p><strong>Phone:</strong> +91 9353910724</p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lokeshbm" target="_blank">linkedin.com/in/lokeshbm</a></p>
-        <h3>Education</h3>
-        <p><strong>Visvesvaraya Technological University</strong> – B.E. in Computer Science and Engineering (Bangalore, India | Jul 2021)</p>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>View some of my recent projects</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description">
+                    <h6>NEWSIO : AI Generated Concise News Summary</h6>
+                    <h1>Android Application</h1>
+                    <p>
+                        NEWSIO is a tailor-made ensemble for today's bustling generation of precision and digitized tabloids. Stay updated with our AI generated summaries of news from all over the world or just around you.
+Read it like old school or listen on the go! Available in regional languages and comes with a facet of an in-built dictionary!
+                    </p>
+                </div>
+                <div class="portfolio-img has-margin-right">
+                    <img src="images/newsio.png" alt="" />
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right">
+                    <img src="images/portitem1.png" alt="" />
+                </div>
+                <div class="portfolio-description">
+                    <h6>Interview Prep</h6>
+                    <h1>Android Application</h1>
+                    <p>
+                        An android application which is useful for interview preparation. This app contains questions related to programming , some common questions asked in interview, interview tips, resume builder etc.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right">
+                    <h6>COVID-19 Tracker</h6>
+                    <h1>Android Application</h1>
+                    <p>
+                        An android application which is used to track the pandemic virus which shook the world since December 2019. This app uses google firebase and firestore for login/registrations and to store the symptom data of a user. This app also uses web view to display
+                        the realtime COVID-19 cases around the world (using bing.com/covi) and for india(using covid19india.org). The user can also call to the national covid helpline and connect to the whattsapp chatbot for covid-19 queries using the
+                        app.
+                    </p>
+                    <p>
+                        .
+                    </p>
+                    <p>
+                        Apparently the app was not accepted by google playstore as COVID-19 is a sensitive topic and it violates the developer policy
+                    </p>
+                </div>
+                <div class="portfolio-img ">
+                    <img src="images/portitem2.jpg" alt="" />
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right">
+                    <img src="images/portitem3.jpg" alt="" />
+                </div>
+                <div class="portfolio-description">
+                    <h6>Time-Table</h6>
+                    <h1>Android Application</h1>
+                    <p>
+                        An android application which is used to remind you of what classes you have on a particular day of the week. the user can set the time when the notification is to be received. the notification can also be set for 5 0r 10 mins before any classes begin
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right">
+                    <h6>My Personal Portfolio</h6>
+                    <h1>Portfolio Website</h1>
+                    <p>
+                        The website which you are looking at now, yeah this is my Portfolio which contains all my details such as skills in which i'm good at, projects which i've done, Educations, and my Contact Email.
+                    </p>
+                </div>
+                <div class="portfolio-img ">
+                    <img src="images/portitem4.png" alt="" />
+                </div>
+
+            </div>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:lokeshbm2021@gmail.com">lokeshbm2021@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/lokeshbm" target="_blank">linkedin.com/in/lokeshbm</a></p>
-        <p>GitHub: <a href="https://github.com/lokeshbm" target="_blank">github.com/lokeshbm</a></p>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Experience</h1>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="date" data-date="June 2020 - Jan 2021">
+                        <h2>Co-Founder</h2>
+                        <h1>Newsio</h1>
+                        <p>
+                            - Co-Founder/ Lead Application Developer </br>- Built a fully Production level Cross-Platform Mobile application based on AI-Generated Short news</br> - I am in charge of looking after the development of mobile application
+                            using Flutter Framework
+
+                        </p>
+                    </li>
+                    <li class="date" data-date="May 2020 - June 2020">
+                        <h2>Software Associate Intern</h2>
+                        <h1>Niladvantage Technologies pvt. ltd</h1>
+                        <p>
+                            - Intern Team lead for Android app development and UI Designing </br>- Developed the first prototype of a Video Conferencing app while leading a team of 6 interns
+
+                        </p>
+                    </li>
+                    <!-- <li class="date" data-date="2015">
+                        <h1>Bangalore International Public School</h1>
+                        <p>
+                            10th std
+                        </p>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 Lokesh B M. All rights reserved.</p>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Here's my email id! Lets get in touch: <a id="email" href="lokeshbm2021@gmail.com">lokeshbm2021@gmail.com</a>
+                </h6>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+
+        </div>
+        <p>&copy 2020 Lokesh B M</p>
     </footer>
+
+
 </body>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>
