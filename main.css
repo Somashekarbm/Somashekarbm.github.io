@@ -230,6 +230,7 @@ li {
 /* name */
 
 .landing-text h1 {
+    white-space: nowrap;
     font-size: 20rem;
     font-weight: 500;
     font-family: "The Historia demo", sans-serif;
@@ -326,7 +327,7 @@ li {
 }
 
 .profile-img {
-    max-width: 30rem;
+    max-width: 40rem;
     flex: 1;
     margin: 0 3rem 7rem 0;
 }
@@ -334,6 +335,9 @@ li {
 .profile-img img {
     border-radius: 60%;
 }
+
+
+
 
 .about-details {
     flex: 1;
@@ -452,6 +456,17 @@ li {
     flex: 1;
 }
 
+.edupersona-img {
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+
+
 .portfolio-description {}
 
 .portfolio-description h6 {
@@ -466,6 +481,7 @@ li {
     font-weight: 300;
     opacity: 0.3;
 }
+
 
 .portfolio-description .cta {
     display: inline-block;
